@@ -36,23 +36,20 @@ def snap(t):
 # inserts = plans de coupe posés sur la parole, ancrés sur un instant de la prise parlée.
 # pièce d'insert : (prise, début, fin|None, options) — fin None = durée ajustée (flex).
 # ---------------------------------------------------------------------------------------
+LENS_PUNCH = ("204725", 2.28, 2.63, dict())  # ~0,35 s : la main couvre entièrement l'objectif (flash de rupture)
+
 BLOCKS = [
     dict(nom="Accroche", audio=[("210605", 0.20, 3.70)], inserts=[
-        dict(de=("210605", 0.20), a=("210605", 2.70), plans=[
-            ("204725", 2.30, 3.07, dict(speed=1.6)),            # la main s'arrache de l'objectif
-            ("205559", 0.70, None, dict()),                      # il saisit la boîte
-            ("205117", 0.05, 1.30, dict(speed=1.6, whoosh=True)),  # et la lance hors du cadre
-        ])],
-        subs=[("210605", 0.24, 1.25, "Le piège numéro 3,"),
+        dict(de=("210605", 0.20), a=("210605", 0.55), plans=[LENS_PUNCH]),  # flash : la main claque sur l'objectif
+        ], subs=[("210605", 0.24, 1.25, "Le piège numéro 3,"),
               ("210605", 1.30, 3.70, "beaucoup de parents font ça chaque soir.")]),
     dict(nom="Dents", audio=[("204549", 0.00, 2.85)], inserts=[],
          subs=[("204549", 0.00, 0.96, "Fièvre chez votre bébé ?"),
                ("204549", 0.96, 2.85, "Ce n'est pas la dentition.")]),
     dict(nom="Piège 1", audio=[("210310", 2.15, 6.75)], inserts=[
         dict(de=("210310", 2.95), a=None, plans=[
-            ("204725", 0.90, 1.60, dict()),                      # la main couvre l'objectif → noir
-            ("205741", 0.30, None, dict(speed=1.6, colorfix=True)),  # recul depuis le noir : thermomètre
-            ("photo_thermo", 0, 0.60, dict()),                   # zoom 38,3 °C
+            LENS_PUNCH,                                          # même flash que l'accroche : rupture
+            ("photo_thermo", 0, None, dict()),                   # cut direct sur le thermomètre : 38,3 °C
         ])],
         subs=[("210310", 2.15, 4.18, "Piège 1 : croire aux dents."),
               ("210310", 4.18, 6.75, "Les dents ne donnent pas de forte fièvre.")]),
@@ -75,7 +72,6 @@ BLOCKS = [
     dict(nom="Action", audio=[("210140", 0.00, 8.95)], checklist=True, inserts=[
         dict(de=("210140", 0.00), a=None, plans=[("204909", 0.95, 1.80, dict(swipe=0))]),
         dict(de=("210140", 3.50), a=None, plans=[("204909", 4.55, 5.30, dict(swipe=1))]),
-        dict(de=("210140", 6.10), a=None, plans=[("204909", 10.85, 11.55, dict(swipe=2))]),
     ], subs=[("210140", 0.00, 2.60, "Ton enfant fait la fièvre ? Test au centre de santé."),
              ("210140", 2.60, 5.55, "Mais ton enfant convulse, vomit tout,"),
              ("210140", 5.55, 8.95, "fait la diarrhée, va aux urgences.")]),
@@ -282,6 +278,11 @@ def build_overlay(path, tl, ev, bleeps_out, chrono_rng, reveal_t, chk_end):
     badge = v1.label("PIÈGE N°3", 92, v1.WHITE, v1.RED, pad=38, radius=34)
     qmark = v1.label("?", 150, v1.WHITE, v1.RED, pad=30, radius=90)
     palu = v1.stack(v1.label("PALUDISME", 130, v1.WHITE, v1.RED, pad=42))
+    # checklist alignée sur les mots réellement dits (pas le script validé) : 2 lignes, pas 3.
+    v1.CHECKLIST = [
+        ("Ton enfant fait la fièvre ?", "Test au centre de santé.", False),
+        ("Il convulse, vomit tout, fait la diarrhée ?", "Urgences.", True),
+    ]
     rows, rx = v1.checklist_rows()
     chk_y = [1000]
     for r in rows[:-1]:
@@ -413,7 +414,9 @@ def main():
     reveal_t = tl.map(ri, *BLOCKS[ri]["reveal"])
     ci = [i for i, b in enumerate(BLOCKS) if b.get("checklist")][0]
     last_line = max(s0 for k, s0, s1 in ev["swipes"]) + 0.2 + 0.5
-    chk_rng = (tl.block_rng[ci][0], max(tl.block_rng[ci][1], last_line + 3.0))
+    # la checklist ne doit jamais déborder loin dans le bloc suivant (thématiquement différent) :
+    # on la tient jusqu'à la fin du bloc « Action », avec au plus 1 s de grâce en plus.
+    chk_rng = (tl.block_rng[ci][0], min(max(tl.block_rng[ci][1], last_line + 1.0), tl.block_rng[ci][1] + 1.0))
     tdr_first = min(e[0] for e in edl if e[2] == "210750")
     print(f"Révélation « PALU » à {reveal_t:.2f} s ; TDR à l'écran dès {tdr_first:.2f} s ; "
           f"fin {tl.total:.2f} s → {tl.total - min(reveal_t, tdr_first):.2f} s avant la fin")
