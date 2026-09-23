@@ -1,0 +1,5 @@
+out/
+episodes/*/graphics/chrono/
+episodes/*/assets/*
+!episodes/*/assets/README.md
+__pycache__/
