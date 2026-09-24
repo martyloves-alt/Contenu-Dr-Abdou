@@ -29,7 +29,7 @@ La musique baisse automatiquement quand tu parles (« ducking »), elle remonte 
 | 00:12 | « Piège deux » | Ajoutée avant « Au Bénin… », badge « PIÈGE N°2 » |
 | 00:27 | « Un seul test le dit. » | Remplace « Le test le dit » ; sous-titre : « Un seul test le dit : le TDR. » |
 | 00:31–00:34 | « Mais quand l'enfant convulse, ne tète plus, vomit tout, dort trop, à moins de trois mois, va aux urgences. » | Remplace la phrase embrouillée (plus de « diarrhée »). Les blancs de la note ont été resserrés (enregistrement propre, donc sûr). Les 2 dernières lignes de la checklist apparaissent sur tes balayages de main, au moment où tu dis « convulse » puis « moins de trois mois » |
-| 00:41 | — | Coupe sèche sur l'hésitation : « Dis ça… en commentaire. » |
+| 00:41 | — | Passage original remis tel quel (ma coupe avait retiré « Dis ça » au lieu de l'hésitation). La coupe est à faire par Abdou à l'oreille. |
 
 Pendant les voix ajoutées, l'image montre des plans où tu es **silencieux, bouche fermée** (effet voix off), pour éviter des lèvres qui ne correspondent pas aux mots.
 Les notes WhatsApp sont plus proches du micro que tes rushes : je les ai mises au même volume et ajouté un léger effet de pièce pour qu'elles se fondent. **Écoute ces 4 passages** : c'est là qu'une différence de timbre peut encore s'entendre.
@@ -42,5 +42,5 @@ Vérifié par transcription automatique de l'export final : les 4 ajouts sont bi
 
 ## À noter
 
-- Le sous-titre de fin reste le texte validé « Écris un seul mot en commentaire. » alors que tu dis « Dis ça en commentaire ». Dis-moi si tu préfères l'aligner sur ta voix.
+- Sous-titre de fin aligné sur la voix : « Dis ça en commentaire. » (les mots de l'hésitation ne sont pas sous-titrés).
 - Toujours en attente pour l'export final 4K 60 i/s : vidéos originales du téléphone et paramètres Make.com / Creatomate.

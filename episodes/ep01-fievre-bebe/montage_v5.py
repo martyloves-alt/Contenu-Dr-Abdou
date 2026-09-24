@@ -110,10 +110,9 @@ SECTIONS = [
         ("204909", 6.50, 10.65, "punch"),        # « …à moins de trois mois… » : balayage 3 → ligne 3
         ("210140", 8.95, 9.90, None),            # checklist complète tenue
     ]),
-    dict(nom="Appel à l'action", audio=[("205005", 0.00, 3.10), ("205005", 4.60, 5.58), ("205005", 6.30, 7.20)], video=[
+    dict(nom="Appel à l'action", audio=[("205005", 0.00, 3.10), ("205005", 4.60, 7.20)], video=[
         ("205005", 0.00, 3.10, None),
-        ("205005", 4.60, 5.58, "punch"),         # « Dis ça… »
-        ("205005", 6.30, 7.20, None),            # coupe sèche sur l'hésitation → « …en commentaire. »
+        ("205005", 4.60, 7.20, "punch"),         # passage original remis (coupe d'hésitation à faire par Abdou)
     ]),
 ]
 
@@ -155,7 +154,7 @@ SUBS = [
     (6, 3.00, 7.40, "Convulsions, ne tète plus, vomit tout, dort trop ?"),
     (6, 7.40, 11.10, "Moins de 3 mois ? Urgences."),
     (7, 0.00, 3.10, "Chez toi, on dit quoi quand bébé est chaud ?"),
-    (7, 3.10, 4.98, "Écris un seul mot en commentaire."),
+    (7, 3.10, 5.70, "Dis ça en commentaire."),  # aligné sur la voix (hésitation non sous-titrée)
 ]
 
 CHECKLIST = [
