@@ -32,8 +32,8 @@ Script : `montage_ep2_v4.py`. Modèle : `Video_1859758211849536.mp4`.
 | 6,6–14,9 s | Visage plein écran | « …tu perds un temps précieux. Trois bons réflexes… » |
 | 14,9–17,8 s | Manipulations + vignette : test posé → sang → **goutte de tampon au ralenti** | « Puis… dans les 24 heures pour le TDR » |
 | 17,8–23,7 s | Migration → résultat filmé (flèche + **NÉGATIF · NEGATIVE**) → photo d'un autre test (2 flèches + **POSITIF · POSITIVE**, étiquette EXEMPLE) | Note vocale « un point / deux points » |
-| 23,7–35,8 s | Visage plein écran, sauf « à moins de 3 mois » : carton **MOINS DE 3 MOIS · UNDER 3 MONTHS** (note vocale, aucune image d'Abdou ne dit « 3 ») | Résultats, urgences |
-| 35,8–39,5 s | Visage plein écran, doigt vers le bas | Appel au commentaire |
+| 23,7–34,7 s | Visage plein écran, sauf « à moins de 3 mois » : carton **MOINS DE 3 MOIS · UNDER 3 MONTHS** (note vocale, aucune image d'Abdou ne dit « 3 ») | Résultats, urgences |
+| 34,7–39,5 s | Visage plein écran, doigt vers le bas | Appel au commentaire |
 
 ## 4. Traduction anglaise à valider
 | Français (mots d'Abdou) | Anglais |
