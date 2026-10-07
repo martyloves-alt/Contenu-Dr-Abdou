@@ -2,7 +2,7 @@
   - lecture du test (≈ 00:18–00:22) : voix et sous-titres remplacés par la note WA0021 (« Là où tu vois un trait… ») ;
     flèches et étiquettes recalées sur cette voix ;
   - appel au commentaire refait mot à mot : « Et toi » (Abdou pointe la caméra, IMG_4566) → « sois honnête »
-    (WA0034, lèvres calées sur ses propres mots) → « c'est quoi le sirop… frigo » (boîte de paracétamol,
+    (WA0034, lèvres calées sur ses propres mots) → « c'est quoi le sirop… frigo » (boîte de Bimalaril — un vrai sirop, marque floutée ; d'abord paracétamol,
     rush de l'épisode 1, voix ×1,6) → « au cas où » (WA0034 calé) → « Dis-le-moi en commentaire » (WA0034 calé,
     zoom sur Abdou) → « je te dirai si c'est dangereux » (plan de la v4, IMG_4569, zoom sur Abdou).
 Historique v6 :
@@ -254,11 +254,26 @@ def face_track():
 
     files.append(fit("IMG_4566", 0.45, 1.05, fs - c0, 1.06))            # « Et toi » : il pointe la caméra
     files.append(fit("WA0034", 0.40, 1.08, fsir - fs, 1.06))            # « sois honnête »
-    files.append(render_para(len(files), fcas - fsir))                   # « …le sirop… frigo » : paracétamol
+    files.append(render_bima(len(files), fcas - fsir))                   # « …le sirop… frigo » : Bimalaril (sirop)
     files.append(fit("WA0034", 4.55, 5.18, fdis - fcas, 1.06))          # « au cas où »
     files.append(fit("WA0034", 6.80, 7.85, fdir - fdis, 1.25))          # « Dis-le-moi en commentaire » (zoom)
     files.append(fit(TAIL[0], TAIL[1], TAIL[2], TOTAL_F - fdir, 1.25))  # « je te dirai… » : plan de la v4 (zoom)
     return concat(files, os.path.join(TMP, "face.mp4"))
+
+
+def render_bima(k, n):
+    """Boîte de Bimalaril suspension (un vrai sirop), rush 4K IMG_4559, nom de marque flouté comme dans tout l'épisode."""
+    out = os.path.join(TMP, f"f{k:03d}.mp4")
+    a, b = 0.0, 1.95
+    sp = (b - a) / (n / FPS)
+    vf = (f"setpts=PTS/{sp:.4f},fps={FPS},scale={W}:{H}:flags=lanczos,setsar=1,"
+          f"split[m][bb];[bb]crop=380:360:280:500,boxblur=18:3[b2];[m][b2]overlay=280:500,{GRADE},"
+          f"scale={W * 3 // 2}:{H * 3 // 2}:flags=lanczos,"
+          f"zoompan=z='1+0.05*on/{max(1, n - 1)}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
+          f"format=yuv420p")
+    run([FF, "-y", "-ss", f"{a:.3f}", "-t", f"{b - a + 0.3:.3f}", "-i", src("IMG_4559"), "-filter_complex", vf,
+         "-frames:v", str(n), "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", out])
+    return out
 
 
 def render_para(k, n):

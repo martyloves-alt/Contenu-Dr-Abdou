@@ -12,7 +12,7 @@ Script : `montage_ep2_v7.py`.
 |---|---|
 | « Et toi, » | **Plan changé** : Abdou pointe la caméra (IMG_4566) |
 | « sois honnête, » | Vidéo de la v6 (WA0034), **calée sur ses propres mots** « Sois honnête » |
-| « c'est quoi le sirop que tu caches toujours au frigo ? » (**voix ×1,6**) | **Boîte de paracétamol** tenue par Abdou (rush de l'épisode 1, recadré) |
+| « c'est quoi le sirop que tu caches toujours au frigo ? » (**voix ×1,6**) | **Boîte de Bimalaril suspension** (un vrai sirop), rush 4K, nom de marque flouté |
 | « au cas où, » | Vidéo de la v6 (WA0034), **calée sur ses propres mots** « au cas où » |
 | « Dis-le-moi en commentaire, » | Vidéo de la v4 (WA0034), **calée sur ses propres mots**, **zoom sur Abdou** |
 | « je te dirai si c'est dangereux. » | Plan de la v4 (IMG_4569, il pointe vers le bas), **zoom sur Abdou** |
@@ -21,6 +21,5 @@ Script : `montage_ep2_v7.py`.
 - **Vérification** : à la transcription de l'export, chaque sous-titre démarre à 0,13 s maximum de la voix.
 
 ## ⚠️ À savoir
-1. **La boîte de paracétamol filmée n'est pas un sirop.** C'est du **paracétamol pour perfusion (1000 mg/100 ml, usage hospitalier)** ; je l'avais déjà signalé pour l'épisode 1. La voix dit « sirop… au frigo » pendant qu'on voit une forme hospitalière : un parent attentif ou un soignant peut le relever. Si tu préfères, je remets la boîte de Bimalaril (qui est bien une suspension buvable). Sinon, filme un vrai flacon de sirop de paracétamol.
-2. Ce plan vient d'un **rush de l'épisode 1 en 480p** (export CapCut), agrandi pour remplir l'écran : il est nettement moins net que le reste.
-3. **Toujours au vouvoiement** (vidéos de la v4) : « allez aux urgences », « cherchez une autre cause ». Tu as une note pour « cherche une autre cause » (WA0022), mais elle n'est pas utilisée puisque tu as demandé de garder la v4.
+1. **Mise à jour du 07/10** : la boîte de paracétamol (forme pour perfusion, rush 480p de l'épisode 1) a été remplacée par la **boîte de Bimalaril**, comme demandé. C'est un vrai sirop, filmé en 4K, avec le même floutage de marque que dans le reste de l'épisode.
+2. **Toujours au vouvoiement** (vidéos de la v4) : « allez aux urgences », « cherchez une autre cause ». Tu as une note pour « cherche une autre cause » (WA0022), mais elle n'est pas utilisée puisque tu as demandé de garder la v4.
