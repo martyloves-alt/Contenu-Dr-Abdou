@@ -1,0 +1,19 @@
+Vidéo 2 — Vidéo vue sur LinkedIn (plantes / accidents)
+Fichier source : 5865a0a8-Karim-Chonfoungo-Dagnogo_20261121_5.mp4
+Durée : 47.6 s
+Langue détectée : français (fr, probabilité 0.77 — audio en extérieur, bruité)
+Transcription automatique (Whisper large-v3), sans correction sur le fond.
+Légende : [inaudible] = passage non compris ; [incertain] placé juste après le mot dont la transcription est douteuse.
+
+--- TRANSCRIPTION ---
+
+Il n'y a pas d'incantation [incertain], il n'y a pas de gris-gris [incertain] qui provoque [incertain] [inaudible] de quelqu'un [incertain] qui n'est pas vrai [incertain]. Vous ne dites plus ça. Que cette blague-là [incertain], on le fait [incertain], est-ce que c'est faux ? Vous [incertain] ne dites plus ça. Ce n'est même pas bien pour notre éducation. Vous parlez des vertus [incertain] [inaudible], [inaudible] parce que l'inconvénient, c'est quelqu'un qui, pourquoi ? Il met ça en poche, il est imprudent. Il a fait un accident, il va mourir, c'est votre faute. [inaudible] Parce qu'il va penser que la plupart des accidents, c'est un mauvais sort, quelqu'un vous envoie. Donc, comme il a ça, il est [incertain] protégé d'un mauvais sort, il va être imprudent. Il va mourir par votre faute. Vous êtes d'accord ?
+
+--- TEXTE À L'ÉCRAN ---
+
+[00:00 → 00:43] Bandeau bleu en bas : « Il n'y a pas de plantes qui protègent contre les accidents (...) Patrice TALON, Président du Sénat. »
+[00:00 → 00:43] Filigrane : « TikTok » « @ajtikpa » (à droite)
+[00:00 → 00:16] Panneau en haut : « JACQUES » / « JARDIN KADJAF »
+[00:00 → 00:16] Casquette blanche d'une personne à l'arrière-plan : « …ée Verte » (partiellement lisible) [incertain]
+[00:16 → 00:43] Produit rouge sur la table : « …ULMIC » (partiellement lisible) [incertain]
+[00:44 → 00:48] Écran de fin : « TikTok » et « @ ajtikpa » dans une barre de recherche
