@@ -3,3 +3,7 @@ episodes/*/graphics/chrono/
 episodes/*/assets/*
 !episodes/*/assets/README.md
 __pycache__/
+
+# Retouche photo : images sources et exports non versionnés (comme les rushes)
+input/
+output/
