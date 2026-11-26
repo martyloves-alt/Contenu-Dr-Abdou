@@ -30,3 +30,7 @@ vif du cœur, silhouette arrondie, excès de rouge du bord retiré. 186 pixels d
 - Le contact bras/table est reconstitué : sous l'avant-bras gauche, la limite reste un peu nette.
 - La table est unie (pas de vraie texture de bois).
 - Le t-shirt reste blanc pur sur 70 % de sa surface (écrêté dans l'original, irrécupérable).
+
+## Dépôt et accord
+- 2026-11-26 : v4 (JPEG + PNG) déposée dans Google Drive « Photos pro », à côté de la v3.
+- 2026-11-26 : accord écrit de publication donné par la personne photographiée (« C'est ma propre photo : je donne mon accord pour la publier »). Mention conseillée : « décor retouché ».
